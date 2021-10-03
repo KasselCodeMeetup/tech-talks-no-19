@@ -35,3 +35,7 @@ auch wenn es mal schief geht. Und wir stellen uns zwei Fragen:
 
 1. Ist Hefeteig der beste Teig?
 2. Was zur Hölle hat das mit Software zu tun?!
+
+## Meetup.com
+
+https://www.meetup.com/KasselCodeMeetup/events/279407305/
