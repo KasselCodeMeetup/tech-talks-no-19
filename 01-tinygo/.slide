@@ -1,0 +1,100 @@
+# Go ist zu groß für Microcontroller und WebAssembly! Oder doch nicht? 
+Eine Einführung in TinyGo
+10 Oct 2021
+Tags: go, tinygo, wasm
+Summary: What is TinyGo? What does TinyGo offer? And how do I implement homeautomation with TinyGo?
+
+Tobias Theel | Nerzal
+Princess and Lead Developer at ClariLab
+tobias.theel@noobygames.de
+https://noobygames.de
+@Nooby_Games
+
+## 
+
+.image assets/tinygo-logo.png _ 650
+
+## Agenda
+
+- Was ist TinyGo?
+- Wieso TinyGo?
+- Und WebAssembly?
+
+## Was ist TinyGo?
+
+- Go für Microcontroller
+- Go für WebAssembly
+- Neuer Compiler
+- Neue Go std libs
+
+## Ja nice, aber lohnt sich das?
+
+- First commit im April 2018
+- Official Google Sponsored Project (FOSDEM 2020)
+- Es macht spaß <3
+
+## Ja schön, aber support der Sprache?
+
+- Alle basis Datentypen (int, string, etc.)
+- Alle Kontrollstrukturen (if, switch)
+- Alle Schleifen
+- defer
+- Goroutines
+- Channels
+
+## Ja schön, aber die Standardbibliotheken?
+
+.image assets/tinygo-std-libs.png _ 650
+
+## Ja schön, aber Support für mein verstaubtes Board?
+
+- Mehr als 70 microcontroller boards
+- Beispiele: 
+  - Arduino UNO
+  - Arduino Nano 33 IoT
+  - Fast die gesamte Produktpalette von Adafruit
+  - GameBoyAdvance & Nintendo Switch
+
+## Okay, aber muss ich nun alle Treiber für die weitere Hardware selbst schreiben?
+
+- Jain!
+- Mehr als 67 Verschiedene  Devices sind supported
+  - BMP 280 | I2C
+  - HC-SR04 Ultrasonic distance sensor | GPIO
+  - MAX7219 display driver | SPI
+  - ST7735 TFT color display | SPI
+
+## Get in touch with TinyGo
+
+1. Follow [@TinyGolang](https://twitter.com/TinyGolang) on Twitter
+1. Join the #tinygo channel on the [Gophers Slack](https://gophers.slack.com) 
+1. Follow [https://www.twitch.tv/lapipatv](https://www.twitch.tv/lapipatv) where [deadprogram (Ron Evans)](https://twitter.com/deadprogram) hacks on microcontrollers
+1. Visit [https://tinygo.org](https://tinygo.org), which recently has been completely revamped
+
+## I wrote a book <3 
+
+.image assets/B16555_MockupCover.jpg _ 400
+
+## What do you learn?
+
+1. How to setup TinyGo + IDE
+1. Basics of microcontroller development
+1. GPIO/SPI/I2C etc. 
+1. How to write your own drivers
+1. How to use WiFi and send data over the network
+1. How to build web apps using WASM
+
+## Where can u get it?
+
+Basically at every bookstore.
+
+Here is a link to help u out: [https://packt.link/a/1800560206](https://packt.link/a/1800560206)
+
+## Repositories
+
+[home automation project](https://github.com/Nerzal/homeautomation)
+
+[my published talks](https://github.com/Nerzal/talks)
+
+[tinydom](https://github.com/Nerzal/tinydom)
+
