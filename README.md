@@ -9,21 +9,7 @@ The primary language is german.
 
 ## Talks
 
-### 01 Go ist zu groß für Microcontroller und WebAssembly! Oder doch nicht? 
-
-In diesem Talk wird Tobi uns in die Welt von TinyGo einführen und anhand von
-kleinen Beispielen zeigen, dass Go auch sehr sehr klein sein kann, ohne dabei
-irgendwelche Vorteile der Sprache einzubüßen.
-
-### 02 ЦАСХЛЕСС @ ФУЗИОН
-
-Beim Fusion-Festival ФУЗИОН 2021 stellten wir Infrastruktur zur Erfassung des
-Crew-Caterings und des "Elektrobiers". Dazu waren wir an verschiedene
-selbstgebaute Systeme der Fusion angebunden. Die eigentliche Buchung erfolge auf
-NFC-Chips am Armband. Die technische Infrastruktur basiert u.A. auf Ruby on
-Rails und Android. In dem Vortrag stellen wir die benutzte Infrastruktur vor.
-
-### 03 Wer Tütensuppen macht, ist noch kein Koch
+### 01 Wer Tütensuppen macht, ist noch kein Koch
 
 Weisheiten über das Backen, das Leben und was das alles mit Code zu tun hat
 
@@ -35,6 +21,21 @@ auch wenn es mal schief geht. Und wir stellen uns zwei Fragen:
 
 1. Ist Hefeteig der beste Teig?
 2. Was zur Hölle hat das mit Software zu tun?!
+
+
+### 02 Go ist zu groß für Microcontroller und WebAssembly! Oder doch nicht? 
+
+In diesem Talk wird Tobi uns in die Welt von TinyGo einführen und anhand von
+kleinen Beispielen zeigen, dass Go auch sehr sehr klein sein kann, ohne dabei
+irgendwelche Vorteile der Sprache einzubüßen.
+
+### 03 ЦАСХЛЕСС @ ФУЗИОН
+
+Beim Fusion-Festival ФУЗИОН 2021 stellten wir Infrastruktur zur Erfassung des
+Crew-Caterings und des "Elektrobiers". Dazu waren wir an verschiedene
+selbstgebaute Systeme der Fusion angebunden. Die eigentliche Buchung erfolge auf
+NFC-Chips am Armband. Die technische Infrastruktur basiert u.A. auf Ruby on
+Rails und Android. In dem Vortrag stellen wir die benutzte Infrastruktur vor.
 
 ## Meetup.com
 
