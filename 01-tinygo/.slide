@@ -45,6 +45,7 @@ https://noobygames.de
 ## Ja schön, aber die Standardbibliotheken?
 
 .image assets/tinygo-std-libs.png _ 650
+.caption Screenshot from [[https://tinygo.org/docs/reference/lang-support/stdlib/][tinygo.org]]
 
 ## Ja schön, aber Support für mein verstaubtes Board?
 
@@ -64,6 +65,92 @@ https://noobygames.de
   - MAX7219 display driver | SPI
   - ST7735 TFT color display | SPI
 
+## Hello World
+
+.play assets/code/helloworld.go
+
+## Nice, geht das auch auf nem Microcontroller?
+
+Schauen wir uns doch mal größe der Binary an
+
+> go build -o assets/binaries/standard-go-hello assets/code/helloworld.go
+
+Ergebnis: 
+
+    -rwxrwxr-x 1 tobias tobias 1215917 Okt 17 12:07 standard-go-hello
+
+
+## Okay, und mit TinyGo?
+
+> tinygo build -o assets/binaries/tiny-go-hello assets/code/helloworld.go
+
+Und nun der Vergleich:
+
+    -rwxrwxr-x 1 tobias tobias 1215917 Okt 17 12:07 standard-go-hello
+    -rwxrwxr-x 1 tobias tobias   43184 Okt 17 12:07 tiny-go-hello
+
+## Aber, das ist doch immernoch viel zu groß?!
+
+> tinygo build -o assets/binaries/tiny-arduino-go-hello --target=arduino --gc=none assets/code/helloworld.go 
+
+Und der Vergleich:
+
+    -rwxrwxr-x 1 tobias tobias 1215917 Okt 17 12:11 standard-go-hello
+    -rwxrwxr-x 1 tobias tobias   23772 Okt 17 12:16 tiny-arduino-go-hello
+    -rwxrwxr-x 1 tobias tobias   43184 Okt 17 12:12 tiny-go-hello
+
+## Aber, dann bleibt mir doch trotzdem kaum Platz für mein Code?
+
+**Arduino Specs**
+
+Prozessor: ATmega328P
+
+CPU: 16MHz (8-Bit)
+
+Flash: 32KB
+
+SRAM: 2KB
+
+EEPROM: 1KB
+
+## Magie!
+
+Flash Command:
+
+> tinygo flash --target=arduino --gc=none assets/code/helloworld.go 
+
+Auszug aus dem log:
+> avrdude: 480 bytes of flash written
+
+Es bleiben also immernoch ca. 30KB an Platz für euren Code übrig. (0.5KB frisst der Bootloader)
+
+Nach sämtlichen Optimierungen von TinyGo
+
+> 1215917 Bytes -> 480 Bytes
+
+## Beispiel 2
+
+> VSCode example reminder
+
+## WebAssembly
+
+Was ist das überhaupt? 
+
+> WebAssembly (abbreviated Wasm) is a binary instruction format for a stack-based virtual machine. Wasm is designed as a portable compilation target for programming languages, enabling deployment on the web for client and server applications.
+
+.caption Quote from [[https://webassembly.org/][webassembly.org]]
+
+## Wieso TinyGo?
+
+Im Web ist die Größe eben doch wichtig:
+
+    -rwxrwxr-x 1 tobias tobias  158868 Okt 17 13:01 tiny-wasmgo.wasm
+    -rwxrwxr-x 1 tobias tobias 1667425 Okt 17 13:00 wasmgo.wasm
+
+## ShowTime
+
+> Reminder: zeig den Menschen doch mal, was man mit TinyGo in WebAssembly bauen könnte.
+
 ## Get in touch with TinyGo
 
 1. Follow [@TinyGolang](https://twitter.com/TinyGolang) on Twitter
@@ -71,7 +158,7 @@ https://noobygames.de
 1. Follow [https://www.twitch.tv/lapipatv](https://www.twitch.tv/lapipatv) where [deadprogram (Ron Evans)](https://twitter.com/deadprogram) hacks on microcontrollers
 1. Visit [https://tinygo.org](https://tinygo.org), which recently has been completely revamped
 
-## I wrote a book <3 
+## Gibt es irgendwo auch tutorials? 
 
 .image assets/B16555_MockupCover.jpg _ 400
 

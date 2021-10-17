@@ -1,6 +1,12 @@
 # Tinygo
 
-View slides using go present.
+## go-present is needed to run the presentation
+
+Find the documentation [here](https://pkg.go.dev/golang.org/x/tools/present?utm_source=godoc)
+
+> go get golang.org/x/tools/cmd/present
+
+## View slides using go-present
 
 ```bash
 $ present
