@@ -1,4 +1,4 @@
-# Tinygo
+go g# Tinygo
 
 ## go-present is needed to run the presentation
 

@@ -128,9 +128,13 @@ Nach sämtlichen Optimierungen von TinyGo
 
 > 1215917 Bytes -> 480 Bytes
 
-## Beispiel 2
+## Kannst auch mal was auf echter Hardware zeigen?
 
-> VSCode example reminder
+.code assets/code/example2/hello/helloroutine.go
+
+## Main
+
+.code assets/code/example2/example2.go
 
 ## WebAssembly
 
@@ -146,6 +150,14 @@ Im Web ist die Größe eben doch wichtig:
 
     -rwxrwxr-x 1 tobias tobias  158868 Okt 17 13:01 tiny-wasmgo.wasm
     -rwxrwxr-x 1 tobias tobias 1667425 Okt 17 13:00 wasmgo.wasm
+
+## Was braucht es?
+
+1. Einen Fileserver
+1. Etwas Gluecode
+1. TinyGo
+1. 
+1. Profit
 
 ## ShowTime
 

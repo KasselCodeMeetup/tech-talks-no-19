@@ -19,6 +19,9 @@ flash-hello-arduino-gc-scheduler:
 flash-example2: 
 	tinygo flash --target=arduino --scheduler=tasks assets/code/example2/example2.go 
 
+log-example2:
+	cat /dev/ttyACM1
+
 dashboard-linux:
 	rm -rf assets/code/html
 	mkdir assets/code/html

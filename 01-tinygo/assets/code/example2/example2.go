@@ -3,30 +3,21 @@ package main
 import (
 	"machine"
 	"time"
+
+	"github.com/KasselCodeMeetup/tech-talks-no19/01-tinygo/assets/code/example2/hello"
 )
 
 func main() {
-	led := machine.LED
-	led.Configure(machine.PinConfig{Mode: machine.PinOutput})
+	externalLED := machine.D2
+	externalLED.Configure(machine.PinConfig{Mode: machine.PinOutput})
 
-	go func() {
-		for {
-			println("Hello from Goroutine #1 !")
-			time.Sleep(500 * time.Millisecond)
-		}
-	}()
-
-	go func() {
-		for {
-			println("Hello from Goroutine #2 !")
-			time.Sleep(500 * time.Millisecond)
-		}
-	}()
+	go hello.Hello(1)
+	go hello.Hello(2)
 
 	for {
-		led.High()
+		externalLED.High()
 		time.Sleep(time.Second)
-		led.Low()
+		externalLED.Low()
 		time.Sleep(time.Second)
 	}
 }
