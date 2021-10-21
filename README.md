@@ -29,14 +29,6 @@ In diesem Talk wird Tobi uns in die Welt von TinyGo einführen und anhand von
 kleinen Beispielen zeigen, dass Go auch sehr sehr klein sein kann, ohne dabei
 irgendwelche Vorteile der Sprache einzubüßen.
 
-### 03 ЦАСХЛЕСС @ ФУЗИОН
-
-Beim Fusion-Festival ФУЗИОН 2021 stellten wir Infrastruktur zur Erfassung des
-Crew-Caterings und des "Elektrobiers". Dazu waren wir an verschiedene
-selbstgebaute Systeme der Fusion angebunden. Die eigentliche Buchung erfolge auf
-NFC-Chips am Armband. Die technische Infrastruktur basiert u.A. auf Ruby on
-Rails und Android. In dem Vortrag stellen wir die benutzte Infrastruktur vor.
-
 ## Meetup.com
 
 https://www.meetup.com/KasselCodeMeetup/events/279407305/

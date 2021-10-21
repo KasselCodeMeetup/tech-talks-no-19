@@ -1,0 +1,95 @@
+
+*$ seq 1 5 | tr -d 0-9; echo "Tech Talks No. 19" | toilet -f emboss*
+
+
+
+
+
+```
+━┏┛┏━┛┏━┛┃ ┃  ━┏┛┏━┃┃  ┃ ┃┏━┛  ┏━ ┏━┃   ━┃ ┏━┃
+ ┃ ┏━┛┃  ┏━┃   ┃ ┏━┃┃  ┏┛ ━━┃  ┃ ┃┃ ┃    ┃ ━━┃
+ ┛ ━━┛━━┛┛ ┛   ┛ ┛ ┛━━┛┛ ┛━━┛  ┛ ┛━━┛┛  ━━┛━━┛
+```
+*$ date --date @1634749200*
+*Wed Oct 20 07:00:00 PM CEST 2021*
+*$ *
+
+---
+
+*$ cat agenda.yaml*
+\-\-\-
+\- 19:00: *"Ankommen"*
+
+\- 19:30: *"Willkommen"*
+
+\- 19:45: *"Talk No 1.: Wer Tütensuppen macht, ist noch kein Koch"*
+
+\- 20:15: *"Pizza!"*
+
+\- 21:00: *"Hacktoberfest: Show and Tell"*
+
+\- 21:15: *"Talk No 2. TinyGo"*
+
+---
+
+*$ seq 1 5 | tr -d 0-9; echo "Talk No. 1" | toilet -f emboss*
+
+
+
+
+
+```
+━┏┛┏━┃┃  ┃ ┃  ┏━ ┏━┃   ━┃ 
+ ┃ ┏━┃┃  ┏┛   ┃ ┃┃ ┃    ┃ 
+ ┛ ┛ ┛━━┛┛ ┛  ┛ ┛━━┛┛  ━━┛
+```
+*$ *
+
+---
+
+*$ seq 1 5 | tr -d 0-9; echo "    Pizza!" | toilet -f future*
+
+
+
+
+
+```
+               ┏━┓╻╺━┓╺━┓┏━┓╻
+               ┣━┛┃┏━┛┏━┛┣━┫╹
+               ╹  ╹┗━╸┗━╸╹ ╹╹
+```
+*$ *
+
+---
+
+*$ seq 1 5 | tr -d 0-9; echo "Talk No. 2" | toilet -f emboss*
+
+
+
+
+
+```
+━┏┛┏━┃┃  ┃ ┃  ┏━ ┏━┃   ━━┃
+ ┃ ┏━┃┃  ┏┛   ┃ ┃┃ ┃   ┏━┛
+ ┛ ┛ ┛━━┛┛ ┛  ┛ ┛━━┛┛  ━━┛
+```
+*$ *
+
+---
+
+*$ seq 1 4 | tr -d 0-9; echo "Tech Talks No. 20:"; \\*
+*> echo "  26.01.2022" | toilet -f future*
+
+
+
+
+Tech Talks No. 20:
+      ┏━┓┏━┓ ┏━┓╺┓  ┏━┓┏━┓┏━┓┏━┓
+      ┏━┛┣━┓ ┃┃┃ ┃  ┏━┛┃┃┃┏━┛┏━┛
+      ┗━╸┗━┛╹┗━┛╺┻╸╹┗━╸┗━┛┗━╸┗━╸
+*$ *
+
+
+---
+
+
